@@ -33,18 +33,29 @@ const Modal = _ref => {
   }, title), /*#__PURE__*/_react.default.createElement(_material.Button, {
     sx: {
       top: "-90px",
-      right: "-30px"
+      right: "-30px",
+      fontSize: "1.2rem"
     },
     className: "close_button close",
-    onClick: () => close()
+    onClick: () => close(),
+    variant: "text",
+    size: "small"
   }, "X")), /*#__PURE__*/_react.default.createElement("main", {
     className: "modal_content"
   }, children), /*#__PURE__*/_react.default.createElement("footer", {
     className: "modal_footer"
   }, /*#__PURE__*/_react.default.createElement(_material.Button, {
+    sx: {
+      backgroundColor: "#333333",
+      marginTop: "1rem",
+      "&:hover": {
+        backgroundColor: "#595959"
+      }
+    },
     variant: "contained",
     className: "modal_close",
-    onClick: () => close()
+    onClick: () => close(),
+    color: "secondary"
   }, "OK"))))), document.getElementById("modal"));
 };
 var _default = Modal; //Place this snippet everywhere you want
